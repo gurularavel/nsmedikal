@@ -1,0 +1,47 @@
+<?php 
+
+declare(strict_types=1);
+
+return [
+
+	'about' => 'About',
+	'address' => 'Address',
+	'address_short' => 'Ahmad Rajabli 33, Block C',
+	'all' => 'All',
+	'ask_question' => 'Ask Question',
+	'back' => 'Back',
+	'contact' => 'Contact us',
+	'contact_block_title' => 'Latest Medical Equipment. Installation and Warranty',
+	'content_label' => 'Content',
+	'content_placeholder' => 'There are many variations of passages...',
+	'copyright' => 'All Rights Reserved.',
+	'email_label' => 'Email Address',
+	'email_placeholder' => 'Your Email Address',
+	'history_block_title_home_page' => 'Our Company History',
+	'home' => 'Home',
+	'how_can_we_useful' => '<span style="color: #ffffff;">HOW CAN WE BE</span> USEFUL <span style="color: #ffffff;">TO YOU?</span>',
+	'medical_equipments' => 'Products',
+	'mobile' => 'Mobil',
+	'more' => 'More',
+	'more_links' => 'More Links',
+	'more_products' => 'More products',
+	'name_label' => 'Name',
+	'name_placeholder' => 'Your Name',
+	'news' => 'News',
+	'news_title' => 'After-school Learning, Activity Strands, Curriculum, and Strategy',
+	'no_data_found' => 'No data found',
+	'our_address' => 'OUR ADRESS',
+	'our_email' => 'OUR EMAIL',
+	'our_phones' => 'OUR PHONES',
+	'our_work_time' => 'OUR BUSINESS TIME',
+	'partners' => 'Our Partners',
+	'phone_label' => 'Phone',
+	'phone_placeholder' => 'Your Phone Number',
+	'products' => 'Products',
+	'telephone' => 'Telephone',
+	'telephone_short' => 'Tel',
+	'translations.address_short' => 'Ahmad Rajabli 33C',
+	'upload_catalogue' => 'Catalogue',
+	'work_time' => 'Work Time',
+
+];

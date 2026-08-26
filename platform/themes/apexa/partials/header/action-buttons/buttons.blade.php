@@ -9,7 +9,8 @@
         </li>
     @endif
 
-    {!! Theme::partial('header.action-buttons.partials.language-switcher') !!}
+    {{-- Dil seçimi gizlədilib - sayt default olaraq AZ dilində açılır --}}
+    {{-- {!! Theme::partial('header.action-buttons.partials.language-switcher') !!} --}}
 
     <li class="offCanvas-menu">
         <a href="#" title="{{ __('Menu sidebar') }}" class="menu-tigger">

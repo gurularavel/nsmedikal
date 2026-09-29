@@ -59,7 +59,7 @@
 <body>
 <div class="container">
     <div class="icon">🛠️</div>
-    <h1>Saytda texniki işlər aparılır</h1>
+    <h1>Saytda texniki işlər aparılır.</h1>
     <p>Sizə daha yaxşı xidmət göstərmək üçün saytımızda yenilənmə işləri həyata keçirilir. Tezliklə yenidən xidmətinizdə olacağıq.</p>
     <div class="badge">Anlayışınız üçün təşəkkür edirik!</div>
 </div>

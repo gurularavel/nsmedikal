@@ -15,6 +15,9 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    // true olduqda admin girişi etməyən ziyarətçilər texniki işlər səhifəsini görür
+    'site_maintenance' => (bool) env('SITE_MAINTENANCE', false),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

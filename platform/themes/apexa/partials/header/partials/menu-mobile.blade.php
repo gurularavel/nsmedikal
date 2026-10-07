@@ -17,8 +17,7 @@
             {!! dynamic_sidebar('menu_sidebar') !!}
         </div>
 
-        {{-- Dil seçimi gizlədilib - sayt default olaraq AZ dilində açılır --}}
-        {{-- {!! Theme::partial('language-switcher-mobile') !!} --}}
+        {!! Theme::partial('language-switcher-mobile') !!}
 
     </nav>
 </div>

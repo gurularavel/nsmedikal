@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use App\Http\Middleware\SiteMaintenance;
+use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
+use Botble\Base\Forms\Fields\OnOffField;
+use Botble\Setting\Forms\GeneralSettingForm;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -21,5 +24,17 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->app['router']->pushMiddlewareToGroup('web', SiteMaintenance::class);
+
+        // Admin → Settings → General: "Texniki işlər" səhifəsini bir kliklə aç/bağla
+        GeneralSettingForm::extend(function (GeneralSettingForm $form): void {
+            $form->add(
+                'site_maintenance',
+                OnOffField::class,
+                OnOffFieldOption::make()
+                    ->label('Texniki işlər rejimi')
+                    ->value(SiteMaintenance::isEnabled())
+                    ->helperText('Aktiv olduqda ziyarətçilər "texniki işlər görülür" səhifəsini görür. Admin paneldə giriş etmiş istifadəçilər saytı normal görür.')
+            );
+        });
     }
 }

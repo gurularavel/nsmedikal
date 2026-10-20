@@ -10,9 +10,15 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SiteMaintenance
 {
+    // Admin paneldəki ayar (DB) əsasdır; hələ saxlanmayıbsa .env-dəki SITE_MAINTENANCE istifadə olunur
+    public static function isEnabled(): bool
+    {
+        return (bool) setting('site_maintenance', config('app.site_maintenance'));
+    }
+
     public function handle(Request $request, Closure $next): Response
     {
-        if (! config('app.site_maintenance')) {
+        if (! static::isEnabled()) {
             return $next($request);
         }
 
